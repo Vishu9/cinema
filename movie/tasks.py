@@ -6,6 +6,7 @@ import time
 @shared_task
 def update_movie_ranks():
     time.sleep(15)    
+    print("task executing")
     # Importing models inside the task function to avoid AppRegistryNotReady error
     from .models import Movie
     
